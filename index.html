@@ -166,6 +166,7 @@
       color: var(--text);
     }
     .logo-name em { font-style: normal; color: #9b87f5; }
+    .nav-btn-short { display: none; }
     .nav-btn {
       display: inline-flex;
       align-items: center;
@@ -884,7 +885,8 @@
       .features-grid { grid-template-columns: 1fr; }
       .hero-stats { gap: 32px; }
       .footer-bottom { flex-direction: column; align-items: center; text-align: center; }
-      .nav-btn span { display: none; }
+      .nav-btn-full { display: none; }
+      .nav-btn-short { display: inline; }
     }
 
     @media (max-width: 480px) {
@@ -914,7 +916,8 @@
         <!-- LEMBRETE: adicionar DDD ao número antes de publicar — ex: 5511971007121 para SP -->
         <a href="https://wa.me/5511971007121" class="nav-btn" target="_blank" rel="noopener">
           <i class="fab fa-whatsapp"></i>
-          <span>Solicitar auditoria</span>
+          <span class="nav-btn-full">Solicitar auditoria</span>
+          <span class="nav-btn-short">Contratar</span>
         </a>
       </div>
     </div>
